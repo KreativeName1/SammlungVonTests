@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "username": "Test",
+        "email": "test@test.com",
+        "password": "8cb2237d0679ca88db6464eac60da96345513964",
+        "role": "author",
+        "image": "wp7196356-purple-4k-wallpapers.jpg",
+        "banner": "wp7196356-purple-4k-wallpapers.jpg",
+        "banned": false,
+        "created_at": "21-03-2024 22:28:03",
+        "bio": "Test",
+        "posts": [
+            {
+                "id": 1,
+                "banned": false,
+                "title": "Der Titel",
+                "content": "Die Beschreibung",
+                "file": "1-1.md",
+                "created_at": "21-03-2024 22:29:35",
+                "viewedby": [
+                    1
+                ],
+                "likedby": [
+                    1
+                ],
+                "dislikedby": []
+            }
+        ],
+        "following": []
+    }
+]
