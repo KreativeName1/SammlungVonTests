@@ -1,0 +1,188 @@
+:root {
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-dark: #333;
+  --bg-light: #fff;
+  --bg-accent: #c41717;
+  --bg-accent-light: #ff3e3e;
+  --margin-header: 7rem;
+  --link-color: #1a17c4;
+  --link-color-hover: #3e3eff;
+}
+body {
+  margin: 0;
+  /* font: 1.5rem, Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  font-family: sans-serif;
+  line-height: 1.1;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font: inherit;
+}
+a:hover {
+  color: var(--link-color-hover);
+}
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-accent);
+  color: var(--text-light);
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  left: 0;
+  width: 100%;
+}
+header a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+}
+header a:hover {
+  color: var(--text-light);
+}
+header h1 {
+  flex: 1;
+}
+header>nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+  text-align: right;
+  margin-right: 2rem;
+}
+main {
+  margin-top: var(--margin-header);
+}
+input:is([type='text'], [type='password'], [type='email'], [type='tel'], [type='number'], [type='search'], [type='url'], [type='date'], [type='month'], [type='week'], [type='time'], [type='datetime'], [type='datetime-local'], [type='color'], [type='file'], [type='image']) {
+  padding: 0.5rem;
+  font: inherit;
+  border: 1px solid var(--bg-accent);
+  border-radius: 0.25rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+.white, .white:hover {
+  color: var(--text-light);
+}
+form {
+  margin: 0;
+  padding: 4rem 2rem;
+  width: fit-content;
+  background-color: var(--bg-light);
+  box-shadow: var(--bg-dark) 0 0 5px;
+}
+button, input[type='submit'] {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  border: 1px solid var(--bg-accent);
+  border-radius: 0.25rem;
+  background-color: var(--bg-accent);
+  color: var(--text-light);
+  transition: .3s;
+  cursor: pointer;
+}
+button:hover, input[type='submit']:hover {
+  background-color: var(--bg-accent-light);
+  transition: .3s;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  align-items: center;
+}
+.wide input {
+  width: 500px;
+}
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.panel {
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 800px;
+  background-color: var(--bg-light);
+  box-shadow: var(--bg-dark) 0 0 5px;
+}
+.panel h3 {
+  margin: .5rem 0;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.popop {
+  position: fixed;
+  color: var(--text-light);
+  top: 50%;
+  display: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popop #close {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+.popop #close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.panel-header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--bg-dark);
+  margin: 1rem 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  box-shadow: none;
+}
+@media (max-width: 1000px) {
+  :root {
+    --margin-header: 9rem;
+  }
+  header {
+    height: 7rem;
+  }
+}
