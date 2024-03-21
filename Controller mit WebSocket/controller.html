@@ -1,0 +1,126 @@
+<html>
+<head>
+  <title>Controller</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../standard.css">
+  <style>
+    body {
+      font-size: 2rem;
+    }
+    .border {
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 1rem;
+      min-width: 20rem;
+    }
+    .bo-rad {
+      border-radius: 3px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    input[type="range"] {
+      accent-color: red;
+      /* make it thicker */
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100px;
+    }
+  </style>
+</head>
+<body class="centered vertical">
+  <h1>Controller</h1>
+  <fieldset>
+    <legend>Controller</legend>
+    <label for="deadzone">Deadzone: </label>
+    <input type="text" id="deadzone" value="0.036" />
+    <p id="status">Nicht verbunden/ erkannt</p>
+  </fieldset>
+  <fieldset>
+    <legend>Server</legend>
+  <label for="ip">IP: </label>
+  <input type="text" id="ip" value="127.0.0.1" />
+  <p id="socket-status">Websocket getrennt</p>
+  </fieldset>
+  <div class="flex" style="gap:1rem">
+    <button id="stop-start">Start</button>
+    <button id="connect">Server Starten</button>
+    <button id="disconnect">Server schließen</button>
+  </div>
+  <div class="grid-2">
+    <div class="border centered vertical">
+      <h4>Linker Stick</h4>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="none" id="left-btn"/>
+        <circle cx="50" cy="50" r="5" stroke="red" stroke-width="3" fill="red" id="left" />
+      </svg>
+      <span id="left-stick-x">X: ?</span>
+      <span id="left-stick-y">Y: ?</span>
+    </div>
+    <div class="border centered vertical">
+      <h4>Rechter Stick</h4>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="none" id="right-btn" />
+        <circle cx="50" cy="50" r="5" stroke="red" stroke-width="3" fill="red" id="right" />
+      </svg>
+      <span id="right-stick-x">X: ?</span>
+      <span id="right-stick-y">Y: ?</span>
+    </div>
+    <div class="border centered vertical">
+      <h4>D-Pad</h4>
+      <svg width="150">
+        <rect x="50" y="0" id="dpad-up" width="50" height="50" fill="none" stroke="black" stroke-width="3"/>
+        <rect x="0" y="50" id="dpad-left" width="50" height="50" fill="none" stroke="black" stroke-width="3"/>
+        <rect x="50" y="100" id="dpad-down" width="50" height="50" fill="none" stroke="black" stroke-width="3"/>
+        <rect x="100" y="50" id="dpad-right" width="50" height="50" fill="none" stroke="black" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="border centered vertical">
+      <h4>Tasten</h4>
+      <svg width="150" heigth="200" style="margin-top:-1rem;">
+        <circle r="20" cx="75" cy="50" fill="none" stroke="black" stroke-width="3" id="button-4" />
+        <circle r="20" cx="120" cy="90" fill="none" stroke="black" stroke-width="3" id="button-2" />
+        <circle r="20" cx="30" cy="90" fill="none" stroke="black" stroke-width="3" id="button-3" />
+        <circle r="20" cx="75" cy="130" fill="none" stroke="black" stroke-width="3" id="button-1" />
+      </svg>
+    </div>
+    <div class="border centered vertical">
+      <h4>Trigger</h4>
+      <div class="flex" style="gap:2rem;margin-bottom: 3rem;">
+        <p>L2</p>
+        <p>R2</p>
+      </div>
+      <input style="padding:0;transform: rotate(-90deg)translateY(-25px)" type="range" min="0" max="100" value="0" id="trigger-left" />
+      <input style="padding:0;transform: rotate(-90deg) translateY(25px) translateX(51px);" type="range" min="0" max="100" value="0" id="trigger-right" />
+      <div class="flex" style="gap:2rem;margin-top: 1rem;">
+        <p>L1</p>
+        <p>R1</p>
+      </div>
+      <svg width="130" height="30">
+        <rect x="0" y="0" width="50" height="30" fill="none" stroke="black" stroke-width="3" id="bumper-left" />
+        <rect x="80" y="0" width="50" height="30" fill="none" stroke="black" stroke-width="3" id="bumper-right" />
+      </svg>
+    </div>
+    <div class="border centered vertical">
+      <div class="flex" style="gap:2rem">
+        <p>Share</p>
+        <p>PS</p>
+        <p>Options</p>
+      </div>
+      <svg width="240" height="30">
+        <rect x="0" y="0" width="50" height="30" fill="none" stroke="black" stroke-width="3" id="share" />
+        <rect x="80" y="0" width="50" height="30" fill="none" stroke="black" stroke-width="3" id="ps-button" />
+        <rect x="160" y="0" width="50" height="30" fill="none" stroke="black" stroke-width="3" id="options" />
+      </svg>
+      <p>Touchpad</p>
+      <svg width="240" height="60">
+        <rect x="0" y="0" width="240" height="60" fill="none" stroke="black" stroke-width="3" id="touchpad" />
+      </svg>
+    </div>
+  </div>
+  <script src="controller.js"></script>
+</body>
+</html>

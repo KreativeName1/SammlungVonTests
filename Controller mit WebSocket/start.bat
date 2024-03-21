@@ -1,0 +1,1 @@
+start cmd /k "color 0a && cd H:\public_html\Controller WebSocket && php server.php"
