@@ -1,2 +1,2 @@
 # SammlungVonTests
-Eine Sammlung von alten Testprojekten aus dem erstem Ausbildungsjahr
+Eine Sammlung von alten Testprojekten/Experimenten, die ich während des ersten Ausbildungsjahres gemacht habe
