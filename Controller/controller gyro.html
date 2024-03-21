@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Controller</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../standard.css">
+  <script src="gamepad.js"></script>
+  <script>const { GamepadListener } = gamepad;</script>
+  <style>
+    body {
+      font-size: 2rem;
+    }
+    .border {
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 1rem;
+      min-width: 20rem;
+    }
+    .bo-rad {
+      border-radius: 3px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    input[type="range"] {
+      accent-color: red;
+      /* make it thicker */
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100px;
+    }
+  </style>
+</head>
+<body class="centered vertical">
+  <h1>Controller</h1>
+  <label for="deadzone">Deadzone: </label>
+  <input type="text" id="deadzone" value="0.036" />
+  <p id="status">Nicht verbunden oder erkannt</p>
+  <div class="grid-2">
+    <div class="border centered vertical">
+      <h4>Angular Velocity</h4>
+      <p id="velocityX">X: ?</p>
+      <p id="velocityY">Y: ?</p>
+      <p id="velocityZ">Z: ?</p>
+    </div>
+  </div>
+  <!-- <script src="controller.js"></script> -->
+  <script src="controller gyro.js"></script>
+</body>
+</html>

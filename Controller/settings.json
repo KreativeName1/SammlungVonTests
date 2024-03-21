@@ -1,0 +1,95 @@
+{
+  "deadzone": 0.036,
+  "Controller": "PS4",
+  "PS4": [
+    {
+      "axis": [
+        {
+          "axis": 0,
+          "name": "Left Stick",
+          "direction": "X"
+        },
+        {
+          "axis": 1,
+          "name": "Left Stick",
+          "direction": "Y"
+        },
+        {
+          "axis": 2,
+          "name": "Right Stick",
+          "direction": "X"
+        },
+        {
+          "axis": 3,
+          "name": "Right Stick",
+          "direction": "Y"
+        }
+      ]
+    },
+    {
+      "buttons": [
+        {
+          "button": 0,
+          "name": "Cross",
+          "symbol": "X"
+        },
+        {
+          "button": 1,
+          "name": "Circle",
+          "symbol": "O"
+        },
+        {
+          "button": 2,
+          "name": "Square",
+          "symbol": "□"
+        },
+        {
+          "button": 3,
+          "name": "Triangle",
+          "symbol": "△"
+        },
+        {
+          "button": 4,
+          "name": "L1"
+        },
+        {
+          "button": 5,
+          "name": "R1"
+        },
+        {
+          "button": 6,
+          "name": "L2"
+        },
+        {
+          "button": 7,
+          "name": "R2"
+        },
+        {
+          "button": 8,
+          "name": "Share"
+        },
+        {
+          "button": 9,
+          "name": "Options"
+        },
+        {
+          "button": 10,
+          "name": "L3"
+        },
+        {
+          "button": 11,
+          "name": "R3"
+        },
+        {
+          "button": 12,
+          "name": "PS"
+        },
+        {
+          "button": 13,
+          "name": "Touchpad"
+        }
+      ]
+    }
+  ]
+
+}

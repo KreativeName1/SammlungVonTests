@@ -1,0 +1,59 @@
+{
+    "packages": [
+        {
+            "name": "piphp/gpio",
+            "version": "0.4.0",
+            "version_normalized": "0.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PiPHP/GPIO.git",
+                "reference": "9288aa1b56c7ca85b182bbfb5225313ca7354093"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PiPHP/GPIO/zipball/9288aa1b56c7ca85b182bbfb5225313ca7354093",
+                "reference": "9288aa1b56c7ca85b182bbfb5225313ca7354093",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3||^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "time": "2020-08-24T13:50:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PiPHP\\GPIO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Carter",
+                    "email": "andrewcarter1992@gmail.com"
+                }
+            ],
+            "description": "A library for accessing the GPIO pins on a Raspberry Pi",
+            "keywords": [
+                "GPIO",
+                "pi",
+                "pin",
+                "pins",
+                "raspberry"
+            ],
+            "support": {
+                "issues": "https://github.com/PiPHP/GPIO/issues",
+                "source": "https://github.com/PiPHP/GPIO/tree/master"
+            },
+            "install-path": "../piphp/gpio"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
