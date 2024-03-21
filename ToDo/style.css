@@ -1,0 +1,71 @@
+.box p {
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.Mittel {
+  /* orange border, bacjground */
+  border: 1px solid #ff6600;
+  background-color: #ff9147;
+}
+.Mittel .importance {
+  color: #c54f00;
+}
+
+.Hoch {
+  /* red border, background */
+  border: 1px solid #ff0000;
+  background-color: #ff6666;
+}
+.Hoch .importance {
+  color: #b30000;
+}
+
+.Niedrig {
+  /* green border, background */
+  border: 1px solid #00cc00;
+  background-color: #66ff66;
+}
+.Niedrig .importance {
+  color: #009600;
+}
+.item {
+  border-radius: 10px;
+  position: relative;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #808080;
+  width: 500px;
+}
+.item .importance {
+  position: absolute;
+  bottom: .2rem;
+  right: .5rem;
+  font-size: 1rem;
+}
+.DateTime {
+  color: #535353;
+  margin-top: 1rem;
+  display: flex;
+  gap: .3rem;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.delete-btn {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  text-decoration: none;
+}
+.delete-btn:hover {
+  color: #ff0000;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}

@@ -1,0 +1,146 @@
+@import "variables"
+
+body
+  margin: 0
+  min-height: 0vh
+  background: $main-color
+  font-family: $main-font
+  font-size: $main-size
+  color: $main-font-color
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $secondary-font
+  font-weight: 300
+  color: $secondary-font-color
+
+input, textarea
+  font-family: $main-font
+  font-size: $main-size
+  padding: 10px
+  border: 1px solid $transparent
+  background-color: $tertiary-color
+  color: $secondary-font-color
+  &:focus-visible
+    outline: none
+    border: 1px solid $accent-color
+
+input:not([type="submit"]), textarea
+  border-radius: 12px
+
+input[type="submit"]
+  border-radius: 8px
+  background-color: $accent-color
+  color: $main-font-color
+  border: 1px solid $transparent
+  transition: all 0.3s ease
+  width: fit-content
+  padding: 4px 30px
+  margin: 0 auto
+  &:hover
+    background-color: $accent-color-hover
+    border: 1px solid $transparent
+p, a, li
+  font-family: $main-font
+  font-size: $main-size
+  color: $secondary-font-color
+a
+  color: revert
+.vertical
+  display: flex
+  flex-direction: column
+  &_center
+    align-items: center
+
+.horizontal
+  display: flex
+  flex-direction: row
+  &_center
+    justify-content: center
+
+.form>*:not(:last-child, label)
+  margin-bottom: 2rem
+
+.form label
+  margin-bottom: 0.5rem
+  font-size: $big-size
+
+.form input
+  font-size: $big-size
+
+.flex
+  display: flex
+  gap: 1rem
+  align-items: center
+
+@for $i from 1 through 20
+  .img-#{$i}
+    width: $i * 10px
+    height: $i * 10px
+
+.formpage-topmar
+  margin-top:5rem
+
+.error, .success
+  font-size: $big-size
+  font-weight: 700
+  text-align: center
+  margin-bottom: 2rem
+
+.error
+  color: #ff4d4d
+
+.success
+  color: #3eff3e
+
+.register-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  column-gap: 3rem
+  row-gap: 3rem
+
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 7rem
+  background-color: $secondary-color
+  z-index: 100
+  display: flex
+  align-items: center
+  >a
+    position: absolute
+    padding: .5rem
+    border-radius: 20px
+    right: 2rem
+    &:hover
+      background-color: $accent-color-hover
+  nav
+    margin-left: 2rem
+  ul
+    display: flex
+    gap: 2rem
+    li
+      list-style: none
+      a
+        color: $secondary-font-color
+        text-decoration: none
+        font-size: $big-size
+        font-weight: 700
+        padding: .5rem 1rem
+        border-radius: 5px
+        transition: all 0.3s ease
+        &:hover
+          background-color: $accent-color-hover
+
+.selected
+  background-color: $accent-color
+main
+  margin-top: 7rem
+  max-height: calc(100vh - 7rem)
