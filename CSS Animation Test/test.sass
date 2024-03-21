@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600')
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+@import url('https://fonts.googleapis.com/css?family=Merriweather Sans')
+
+$color_primary: #f7f7f7
+$color_secondary: #e7e7e7
+$color_tertiary: #aaaaaa
+$color_accent: #975fd6
+
+$fa_primary: 'Roboto', sans-serif
+$fa_secondary: 'Work Sans', sans-serif
+$fa_tertiary: 'Raleway', sans-serif
+$fa_quaternary: 'Merriweather Sans', sans-serif
+
+$ct_dark: #000000
+$ct_normal: rgb(32, 32, 32)
+$ct_light: rgb(70, 70, 70)
+$ct_white: #ffffff
+
+$lh_small: 1.2
+$lh_normal: 1.5
+$lh_large: 1.8
+
+$tr_fast: 0.2s
+$tr_normal: 0.4s
+$tr_slow: 0.6s
+
+$bor_small: 10px
+$bor_normal: 20px
+$bor_large: 30px
+$bor_round: 50%
+
+$bs_small: 0 0 10px rgba(0, 0, 0, 0.1)
+$bs_normal: 0 0 20px rgba(0, 0, 0, 0.1)
+$bs_large: 0 0 30px rgba(0, 0, 0, 0.1)
+
+$pad_small: 1rem
+$pad_normal: 2rem
+$pad_large: 3rem
+
+
+body
+  overflow-x: hidden
+.container-row
+  animation: slideRight .5s forwards
+  display: flex
+  overflow: auto
+  margin-bottom: 5rem
+
+  article
+    min-width: 300px
+    padding: $pad_small
+    margin: 20px
+    background: #fff
+    transition: $tr_normal
+    box-shadow: $bs_small
+    &:hover
+      animation: rotate .5s forwards
+      transition: $tr_normal
+  h2::after
+    content: ""
+    display: block
+    height: 2px
+    margin-bottom: .5rem
+    background: rgb(236, 236, 236)
+    margin-top: 1rem
+
+.container-label
+  margin-left: 1rem
+  animation: slideLeft .5s forwards
+  margin-top: 1rem
+
+.page-title
+  background: url("Background.jpg") no-repeat center center
+  background-size: cover
+  padding: 150px 0
+  text-align: center
+  color: #fff
+  position: relative
+  animation: slideDown .5s forwards

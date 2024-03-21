@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Merriweather Sans");
+body {
+  overflow-x: hidden;
+}
+
+.container-row {
+  -webkit-animation: slideRight 0.5s forwards;
+          animation: slideRight 0.5s forwards;
+  display: flex;
+  overflow: auto;
+  margin-bottom: 5rem;
+}
+.container-row article {
+  min-width: 300px;
+  padding: 1rem;
+  margin: 20px;
+  background: #fff;
+  transition: 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-row article:hover {
+  -webkit-animation: rotate 0.5s forwards;
+          animation: rotate 0.5s forwards;
+  transition: 0.4s;
+}
+.container-row h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-bottom: 0.5rem;
+  background: rgb(236, 236, 236);
+  margin-top: 1rem;
+}
+
+.container-label {
+  margin-left: 1rem;
+  -webkit-animation: slideLeft 0.5s forwards;
+          animation: slideLeft 0.5s forwards;
+  margin-top: 1rem;
+}
+
+.page-title {
+  background: url("Background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  -webkit-animation: slideDown 0.5s forwards;
+          animation: slideDown 0.5s forwards;
+}/*# sourceMappingURL=test.css.map */
