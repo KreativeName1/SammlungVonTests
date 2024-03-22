@@ -1,0 +1,36 @@
+.list {
+  margin-top: 1rem;
+  min-width: 800px;
+}
+.path {
+  margin-top: 10rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 3rem;
+  height: 3rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+form {
+  background-color: var(--color-primary);
+  padding: var(--pad-small) !important;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row !important;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+a {
+  text-decoration: none;
+}
