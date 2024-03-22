@@ -1,0 +1,28 @@
+.note {
+  background-color: rgb(200, 200, 200);
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  max-width: 500px;
+  position: relative;
+}
+.note>:last-child {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: rgb(100, 100, 100);
+}
+body {
+  overflow: hidden;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  margin: 0 auto;
+}
+#demo {
+  height: 100vh;
+  overflow: auto;
+}
